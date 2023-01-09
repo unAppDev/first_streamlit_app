@@ -52,5 +52,8 @@ if streamlit.button('Get Fruit Load List'):
 	my_data_rows = get_fruit_load_list()
 	streamlit.dataframe(my_data_rows)
 
-# This will n ot work correctly, but just go with it for now
+# don't run anything past here hwil we troubleshoot
+streamlit.stop()
+
+# This will not work correctly, but just go with it for now
 my_cur.execute("INSERT INTO PUBLIC.FRUIT_LOAD_LIST VALUES('from streamlit');")
